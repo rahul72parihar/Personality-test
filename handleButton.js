@@ -13,11 +13,9 @@ export function handleStart(){
     console.log(point[0])
     render()
 }
-export function renderModal(){
-    mainDiv.innerHTML='finished'
-}
 export function renderStart(){
     let str = `
+        <h1>SELECT YOUR GENDER</h1>
         <div class = "option-div">
             <input id="male-input" type = "radio" name = "gender" value=1>
             <label for = "male-input">

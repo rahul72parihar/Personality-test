@@ -11,7 +11,8 @@
 // const perceiving = 0
 
 export const mainDiv = document.getElementById("main-div")
-export let currentQuestion = 1
+
+export let currentQuestion = 50
 
 import { calculatePer } from "./calculaterPersonality.js"
 import { QuestionData } from "./data.js"
@@ -19,7 +20,9 @@ import { findPersonality } from "./data.js"
 import { findPoint } from "./data.js"
 import { handleStart } from "./handleButton.js "
 import { renderStart } from "./handleButton.js"
+import { renderFinal } from "./celeb.js"
 export let point = [0,0,0,0,0,0,0,0,0]
+const mainContainerDiv = document.getElementById("main-container")
 
 document.addEventListener('click',function(e){
     if(e.target.classList.contains('okay')){
@@ -131,4 +134,9 @@ function renderModal(){
         ${personality}
     </h1>
     `
+    setTimeout(lastWindow,2000)
+}
+function lastWindow(){
+    mainContainerDiv.innerHTML=renderFinal()
+    console.log(renderFinal())
 }

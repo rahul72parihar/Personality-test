@@ -1,5 +1,6 @@
 html{
-    height: 100vh;
+    position: relative;
+    height: 100%;
     background: url(background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -7,8 +8,9 @@ html{
     background-size: cover;
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    min-width: 1400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,25 +25,26 @@ body{
     text-align: justify;
 }
 header{
-    /* position: fixed;
-    top: 0;
-    left: 0; */
+    position: fixed;
+    top: 120px;
+    left: 30px;
     background-color: rgba(3, 3, 3, 0.527);
-    margin: 30px 0;
-    padding: 30px 0;
-    height: 100px;
-    width: 100vw;
-    min-width: 900px;
+    padding: 30px 20px;
+    height: 300px;
+    width: 150px;
     text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px #ffffff;
 }
 #header-div-inner{
-    width: 900px;
+    
     margin: 0 auto;
 }
 main{
-    margin: 0;
-    height: 100vh;
-    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
     background-color: rgba(3, 3, 3, 0.527);
     position: relative;
     /* border: 10px solid pink; */
@@ -52,12 +55,16 @@ h1,h3{
     font-style: normal;
     font-weight: 700;
 }
+h4{
+    margin: 0;
+}
 
 #main-div{
-    /* border: 10px solid red; */
-    background-color: rgba(0, 0, 0, 0.212);
-    position: absolute;
-    top: 0;
+    /* border: 10px solid rgb(255, 255, 255); */
+    box-shadow: 0px 0px 5px #ffffff;
+    background-color: rgba(0, 0, 0, 0.61);
+    position: fixed;
+    top: 100px;
     left: 0;
     right: 0;
     bottom: 150px;
@@ -107,4 +114,34 @@ input[type=radio], input[type=checkbox] {
 form{
     text-align: left;
     width: 100%;
+}
+.celeb-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+img{
+    width: 200px;
+}
+.celeb-icon{
+    margin: 20px;
+    padding: 0 20px;
+    width: 300px;
+    height: 500px;
+    border: 2px solid white;
+    padding-top: 20px;
+    background-color: rgba(255, 175, 244, 0.144);
+    border-radius: 20px;
+}
+.result-div{
+    font-size: 1.6rem;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 100px;
+    border: 10px solid pink;
+}
+.oneRow{
+    display: flex;
+    justify-content: space-between;
 }
