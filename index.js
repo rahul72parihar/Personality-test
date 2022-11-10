@@ -11,7 +11,7 @@
 // const perceiving = 0
 
 export const mainDiv = document.getElementById("main-div")
-export let currentQuestion = 50
+export let currentQuestion = 1
 
 import { QuestionData } from "./data.js"
 import { findPersonality } from "./data.js"
