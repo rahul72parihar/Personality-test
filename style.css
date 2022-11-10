@@ -16,11 +16,10 @@ body{
     margin: 0;
     text-align: center;
     color: white;
+    font-size: 1rem;
     text-shadow: 0px 0px 5px #070707;
 }
 #start-para{
-    font-size: 25px;
-    margin-top: 100px;
     text-align: justify;
 }
 header{
@@ -42,26 +41,20 @@ header{
 main{
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    
     background-color: rgba(3, 3, 3, 0.527);
     position: relative;
-    height: 100vh;
+    /* border: 10px solid pink; */
 }
 h1,h3{
     margin-top: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    display: inline;
-}
-h1{
-    font-size: 51px;
-}
-h3{
-    font-size: 40px;
 }
 
 #main-div{
+    /* border: 10px solid red; */
     background-color: rgba(0, 0, 0, 0.212);
     position: absolute;
     top: 0;
@@ -70,7 +63,7 @@ h3{
     bottom: 0;
     margin: auto;
     width: 700px;
-    height :500px;
+    height :300px;
     display: flex;
     flex-direction: column;
     padding: 100px;
