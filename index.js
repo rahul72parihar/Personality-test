@@ -126,5 +126,9 @@ console.log(findPersonality(25,1))
 function renderModal(){
     mainDiv.innerHTML='finished'
     let personality = calculatePer()
-
+    mainDiv.innerHTML+=`
+    <h1>
+        ${personality}
+    </h1>
+    `
 }
