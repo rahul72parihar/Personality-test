@@ -11,8 +11,9 @@
 // const perceiving = 0
 
 export const mainDiv = document.getElementById("main-div")
-export let currentQuestion = 1
+export let currentQuestion = 50
 
+import { calculatePer } from "./calculaterPersonality.js"
 import { QuestionData } from "./data.js"
 import { findPersonality } from "./data.js"
 import { findPoint } from "./data.js"
@@ -30,10 +31,12 @@ document.addEventListener('click',function(e){
     }
     else if(e.target.classList.contains('next')){
         handleNext()
+        console.log(point)
     }
     else if(e.target.classList.contains('finish')){
         e.target.classList.add('hidden')
-        renderModal()
+        handleNext()
+        console.log(point)
     }
 })
 function handleNext(){
@@ -48,6 +51,11 @@ function handleNext(){
         let currPersonality = findPersonality(currentQuestion,sel)
         point[currPersonality]+=currPoints
     })
+    if(currentQuestion==50)
+        {
+            renderModal()
+            return
+        }
     currentQuestion++
     render()
 }
@@ -117,4 +125,6 @@ console.log(findPersonality(25,1))
 
 function renderModal(){
     mainDiv.innerHTML='finished'
+    let personality = calculatePer()
+
 }
