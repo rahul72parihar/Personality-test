@@ -15,9 +15,9 @@ body{
     margin: 65px;
 }
 header{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
+    left: 0; */
     padding-top: 30px;
     height: 100px;
     width: 100vw;
