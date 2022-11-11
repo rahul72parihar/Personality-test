@@ -1,4 +1,7 @@
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html{
     position: relative;
     height: 100%;
@@ -7,9 +10,6 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-.full-body{
-    min-width: 1000px;
 }
 body{
     height: 100%;
