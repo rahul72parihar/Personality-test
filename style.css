@@ -1,3 +1,4 @@
+
 html{
     position: relative;
     height: 100%;
@@ -6,6 +7,9 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.full-body{
+    min-width: 1000px;
 }
 body{
     height: 100%;
@@ -165,4 +169,9 @@ a{
 .center-div{
     width: 100%;
     margin: 10 auto;
+}
+@media only screen and (max-width: 320px) {
+    #header-div {
+      display: none;
+    }
 }
