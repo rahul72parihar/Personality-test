@@ -1116,7 +1116,7 @@ export const celebData = [
                 image: "/celeb/ISTP/kourtney.jpg",
                 celebName : "Kourtney Kardashian",
                 tag: "203m Followers",
-                description:"The olympian with the amount of most number of medals.",
+                description:"",
             },
             {
                 image: "/celeb/ISTP/sasha.png",
@@ -1142,8 +1142,8 @@ export const celebData = [
 export function renderFinal(finalPersonality){
     let finalRender = `<div class = "result-div">`
     celebData.forEach(function(personalitytype){
-        // if(!(finalPersonality==personalitytype.name))
-        //     { return }
+        if(!(finalPersonality==personalitytype.name))
+            { return }
         finalRender+=`
             <div>
                 <div>

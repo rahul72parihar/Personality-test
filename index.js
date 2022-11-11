@@ -12,7 +12,7 @@
 
 export const mainDiv = document.getElementById("main-div")
 
-export let currentQuestion = 50
+export let currentQuestion = 1
 
 import { calculatePer } from "./calculaterPersonality.js"
 import { QuestionData } from "./data.js"
@@ -126,11 +126,17 @@ console.log(findPoint(25,1))
 console.log(findPersonality(25,1))
 let personality=``
 function renderModal(){
-    mainDiv.innerHTML='finished'
+
     personality = calculatePer()
+    
+    mainDiv.innerHTML= `
+    <h1 class = "center-div">
+        FINISHED , Your personality is ${personality}.
+    </h1>
+    `
     mainDiv.innerHTML+=`
     <img src="/loading.svg" class = "loading-svg">
-    <h1>
+    <h1 class = "center-div">
         Loading ${personality} Celebs
     </h1>
     `
