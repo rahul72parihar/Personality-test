@@ -92,10 +92,12 @@ button{
     border-radius: 20px;
 }
 .end{
-    display: none;
-    bottom:200px;
-    top: 100px;
-    left:800px;
+    position:fixed;
+    bottom:600px;
+    top: 40px;
+    left:810px;
+    right: 0;
+    margin: auto;
     height: 50px;
     width: 0px;
     text-align: center;
