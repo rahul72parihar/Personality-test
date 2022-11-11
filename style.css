@@ -11,8 +11,7 @@ html{
     background-size: cover;
 }
 body{
-    height: 2000px;
-    width: 1300px;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
