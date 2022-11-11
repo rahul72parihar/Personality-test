@@ -179,7 +179,7 @@ a{
       width: 600px;
     }
 }
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-height: 1000px) and (max-width: 1300px) {
     #header-div {
       display: none;
     }
