@@ -471,7 +471,7 @@ export const celebData = [
             {
                 image: "/celeb/ESTJ/ford.png",
                 celebName : "Henry Ford",
-                tag: "American industrialist",
+                tag: "",
                 description:"अमेरिकी उद्योगपति, फ़ोर्ड मोटर्स के जनक, और वृहदुत्पादन के असेम्ब्ली लाइन तकनीक के मुख्य विकासकर्ता और विख्यात प्रणेता थे।",
             },
             {
@@ -501,7 +501,7 @@ export const celebData = [
             {
                 image: "/celeb/ESTJ/peacemaker.png",
                 celebName : "Peacemaker ",
-                tag: "Rapper",
+                tag: "DC Character",
                 description:"Peacemaker is a man who fights for peace at any cost, no matter how many people he has to kill to get it.",
             },
             {
