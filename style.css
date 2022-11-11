@@ -146,6 +146,7 @@ img{
     /* box-sizing:content-box; */
     /* border: 10px solid blue; */
     background-color: rgba(3, 3, 3, 0.527);
+    box-shadow: 0 0 3px pink;
 }
 .oneRow{
     display: flex;
