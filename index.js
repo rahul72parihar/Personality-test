@@ -55,11 +55,17 @@ document.addEventListener('click',function(e){
         handleNext()
         console.log(point)
     }
+    else if(e.target.classList.contains('end')){
+        localStorage.clear();
+        renderModal()
+        console.log(point)
+    }
 })
 function handleNext(){
     if(!document.querySelector(`input[name = "${currentQuestion}option"]:checked`)){
         return
     }
+    document.getElementById("end-btn").style.display="inline-block";
     let currSelected = document.querySelectorAll(`input[name = "${currentQuestion}option"]:checked`)
     // console.log(currSelected)
     currSelected.forEach(function(curr){
@@ -107,7 +113,7 @@ export function render(){
     }
     mainDiv.innerHTML=`
         <div class = "question-div">
-            <span>${QuestionData[currentQuestion-1].no} : </span>
+            <span>    Q.${QuestionData[currentQuestion-1].no} out of 50 : </span>
             <span>${QuestionData[currentQuestion-1].question}</span>
         </div>
         <form>

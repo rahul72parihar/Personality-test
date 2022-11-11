@@ -91,6 +91,19 @@ button{
     font-size: 30px;
     border-radius: 20px;
 }
+.end{
+    display: none;
+    bottom:200px;
+    top: 100px;
+    left:800px;
+    height: 50px;
+    width: 0px;
+    text-align: center;
+    background-color: rgb(112, 20, 20);
+    border-radius: 3px;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 20px;
+}
 .option-div,.question-div{
     text-align: left;
     font-family: 'Roboto';
