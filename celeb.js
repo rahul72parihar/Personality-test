@@ -426,8 +426,8 @@ export const celebData = [
             {
                 image: "/celeb/ESFP/nikki.png",
                 celebName : "Niki ",
-                tag: "Nihaachu",
-                description:"Twitch minecraft streamer",
+                tag: "MiNaj",
+                description:"WAP",
             },
             {
                 image: "/celeb/ESFP/starlord.png",
