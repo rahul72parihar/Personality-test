@@ -169,6 +169,18 @@ a{
 }
 @media only screen and (max-width: 1300px) {
     #header-div {
+      display: fix;
+      top: 20px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      height: 100px;
+      width: 600px;
+    }
+}
+@media only screen and (max-height: 1000px) {
+    #header-div {
       display: none;
     }
 }
