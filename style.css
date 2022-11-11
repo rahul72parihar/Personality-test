@@ -92,6 +92,7 @@ button{
     border-radius: 20px;
 }
 .end{
+    display: none;
     position:fixed;
     bottom:600px;
     top: 40px;
