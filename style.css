@@ -1,16 +1,15 @@
-
 html{
     position: relative;
-    /* height: 100%; */
+    /* border: 20px solid green; */
+    width: 100vw;
     background: url(background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color:#ccc;
 }
 body{
-    width: 100%;
-    height: 100%;
     /* border: 20px solid purple; */
     background-position: center;
     background-repeat: no-repeat;
@@ -23,17 +22,7 @@ body{
     text-shadow: 0px 0px 5px #070707;
 }
 main{
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    /* min-width: 1400px; */
-    background-color: rgba(3, 3, 3, 0.527);
-    position: relative;
-    /* border: 10px solid pink; */
+
 }
 #start-para{
     text-align: justify;
@@ -78,7 +67,7 @@ h4{
     right: 0;
     bottom: 50px;
     margin: auto;
-    width: 800px;
+    width: 700px;
     height :400px;
     display: flex;
     flex-direction: column;
@@ -152,6 +141,7 @@ img{
     border-radius: 20px;
 }
 .result-div{
+    background-color: rgba(3, 3, 3, 0.527);
     font-size: 1.6rem;
     width: 1400px;
     margin: 0 auto;
