@@ -170,7 +170,7 @@ a{
     width: 100%;
     margin: 10 auto;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 1300px) {
     #header-div {
       display: none;
     }
