@@ -1140,7 +1140,9 @@ export const celebData = [
     },
 ]
 export function renderFinal(finalPersonality){
-    let finalRender = `<div class = "result-div">`
+    let finalRender = `
+    <div class = "full-width-result-div">
+    <div class = "result-div">`
     celebData.forEach(function(personalitytype){
         if(!(finalPersonality==personalitytype.name))
             { return }
@@ -1180,6 +1182,6 @@ export function renderFinal(finalPersonality){
         })
         finalRender+=`</div>`
     })
-    finalRender+=`</div>`
+    finalRender+=`</div></div>`
     return finalRender
 }

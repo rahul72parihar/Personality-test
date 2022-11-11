@@ -139,13 +139,16 @@ img{
     border-radius: 20px;
 }
 .result-div{
-    background-color: rgba(3, 3, 3, 0.527);
     font-size: 1.6rem;
-    width: 100%;
-    min-width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     padding: 100px 100px;
+    box-sizing: border-box;
     /* border: 10px solid blue; */
+}
+.full-width-result-div{
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.527);
 }
 .oneRow{
     display: flex;
