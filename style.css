@@ -143,11 +143,8 @@ img{
     width: 1200px;
     margin: 0 auto;
     padding: 100px 100px;
-    box-sizing: border-box;
+    /* box-sizing:content-box; */
     /* border: 10px solid blue; */
-}
-.full-width-result-div{
-    width: 100%;
     background-color: rgba(3, 3, 3, 0.527);
 }
 .oneRow{
