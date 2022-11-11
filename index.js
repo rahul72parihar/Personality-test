@@ -9,9 +9,9 @@
 
 // const judging = 0
 // const perceiving = 0
-localStorage.clear()
+// localStorage.clear()
 function setStartValues(){
-    localStorage.setItem("myQuestion", "50")
+    localStorage.setItem("myQuestion", "1")
     localStorage.setItem("myPoint","[0,0,0,0,0,0,0,0,0]")
 }
 let visited = false;
