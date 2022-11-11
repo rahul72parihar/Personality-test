@@ -21,9 +21,7 @@ body{
     font-size: 1rem;
     text-shadow: 0px 0px 5px #070707;
 }
-main{
 
-}
 #start-para{
     text-align: justify;
     font-size: 25px;
@@ -143,7 +141,8 @@ img{
 .result-div{
     background-color: rgba(3, 3, 3, 0.527);
     font-size: 1.6rem;
-    width: 1400px;
+    width: 100%;
+    min-width: 1400px;
     margin: 0 auto;
     padding: 100px 100px;
     /* border: 10px solid blue; */
