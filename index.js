@@ -9,11 +9,25 @@
 
 // const judging = 0
 // const perceiving = 0
+function setStartValues(){
+    localStorage.setItem("myQuestion", "1")
+    localStorage.setItem("myPoint","[0,0,0,0,0,0,0,0,0]")
+}
+let visited = false;
+console.log("curr-> "+JSON.parse(localStorage.getItem('myQuestion')))
+if(!JSON.parse(localStorage.getItem("myQuestion"))||JSON.parse(localStorage.getItem("myQuestion"))==1)
+    {
+        console.log(JSON.parse(localStorage.getItem('myQuestion')))
+        setStartValues()
+    }
+else{
+    visited = true;
+}
 
 export const mainDiv = document.getElementById("main-div")
-
-export let currentQuestion = 1
-
+export let currentQuestion = JSON.parse(localStorage.getItem("myQuestion"))
+export let point = JSON.parse(localStorage.getItem("myPoint"))
+console.log("Points -> "+JSON.parse(localStorage.getItem('myPoint')))
 import { calculatePer } from "./calculaterPersonality.js"
 import { QuestionData } from "./data.js"
 import { findPersonality } from "./data.js"
@@ -21,7 +35,7 @@ import { findPoint } from "./data.js"
 import { handleStart } from "./handleButton.js "
 import { renderStart } from "./handleButton.js"
 import { renderFinal } from "./celeb.js"
-export let point = [0,0,0,0,0,0,0,0,0]
+
 const mainContainerDiv = document.getElementById("main-container")
 
 document.addEventListener('click',function(e){
@@ -54,11 +68,14 @@ function handleNext(){
         point[currPersonality]+=currPoints
     })
     if(currentQuestion==50)
-        {
+        {   
+            localStorage.clear();
             renderModal()
             return
         }
     currentQuestion++
+    localStorage.setItem("myQuestion",JSON.stringify(currentQuestion))
+    localStorage.setItem("myPoint",JSON.stringify(point))
     render()
 }
 export function render(){
@@ -145,4 +162,8 @@ function renderModal(){
 function lastWindow(){
     mainContainerDiv.innerHTML=renderFinal(personality)
     console.log(renderFinal(personality))
+}
+if(visited){
+    document.getElementById("header-div").style.display="none"
+    render()
 }
