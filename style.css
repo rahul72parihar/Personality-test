@@ -118,6 +118,12 @@ form{
     text-align: left;
     width: 100%;
 }
+/* loading */
+.loading-svg{
+    width: 300px;
+    margin: 20px auto;
+}
+/* FIINAL  */
 .celeb-item{
     display: flex;
     flex-direction: column;
@@ -126,9 +132,11 @@ form{
 }
 img{
     width: 200px;
+    border-radius: 10px;
 }
 .celeb-icon{
-    margin: 20px;
+    /* text-align: justify; */
+    margin: 30px;
     padding: 0 20px;
     width: 300px;
     height: 500px;
@@ -142,9 +150,13 @@ img{
     width: 1200px;
     margin: 0 auto;
     padding: 100px 100px;
-    border: 10px solid pink;
+    /* border: 10px solid pink; */
 }
 .oneRow{
     display: flex;
     justify-content: space-between;
+}
+a{
+    color: #a19ddf;
+    text-shadow: 0px 0px 2px white;
 }

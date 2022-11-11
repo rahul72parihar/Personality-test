@@ -37,7 +37,6 @@ document.addEventListener('click',function(e){
         console.log(point)
     }
     else if(e.target.classList.contains('finish')){
-        e.target.classList.add('hidden')
         handleNext()
         console.log(point)
     }
@@ -125,18 +124,19 @@ export function render(){
 }
 console.log(findPoint(25,1))
 console.log(findPersonality(25,1))
-
+let personality=``
 function renderModal(){
     mainDiv.innerHTML='finished'
-    let personality = calculatePer()
+    personality = calculatePer()
     mainDiv.innerHTML+=`
+    <img src="/loading.svg" class = "loading-svg">
     <h1>
-        ${personality}
+        Loading ${personality} Celebs
     </h1>
     `
-    setTimeout(lastWindow,2000)
+    setTimeout(lastWindow,3000)
 }
 function lastWindow(){
-    mainContainerDiv.innerHTML=renderFinal()
-    console.log(renderFinal())
+    mainContainerDiv.innerHTML=renderFinal(personality)
+    console.log(renderFinal(personality))
 }
