@@ -159,7 +159,7 @@ function renderModal(){
     </h1>
     `
     mainDiv.innerHTML+=`
-    <img src="/loading.svg" class = "loading-svg">
+    <img src="loading.svg" class = "loading-svg">
     <h1 class = "center-div">
         Loading ${personality} Celebs
     </h1>
