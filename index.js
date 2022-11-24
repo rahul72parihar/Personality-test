@@ -174,14 +174,3 @@ if(visited){
     document.getElementById("header-div").style.display="none"
     render()
 }
-
-let forceEnd = 0
-const forceEndEl = document.getElementById("main-div")
-forceEndEl.addEventListener('click',function(){
-    console.log("clicked")
-    forceEnd++;
-    if(forceEnd==3){
-        document.getElementById("header-div").style.display="none"
-        renderModal()
-    }
-})
