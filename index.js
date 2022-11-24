@@ -43,6 +43,7 @@ document.addEventListener('click',function(e){
     if(e.target.classList.contains('okay')){
         mainDiv.innerHTML=renderStart()
         document.getElementById("header-div").style.display="none"
+        document.getElementById("end-btn").style.display="inline-block";
     }
     else if(e.target.classList.contains('start')){
         handleStart()
@@ -65,7 +66,7 @@ function handleNext(){
     if(!document.querySelector(`input[name = "${currentQuestion}option"]:checked`)){
         return
     }
-    document.getElementById("end-btn").style.display="inline-block";
+    
     let currSelected = document.querySelectorAll(`input[name = "${currentQuestion}option"]:checked`)
     // console.log(currSelected)
     currSelected.forEach(function(curr){
